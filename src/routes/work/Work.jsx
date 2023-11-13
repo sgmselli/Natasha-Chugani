@@ -18,7 +18,7 @@ function Work() {
                 </Box>
 
                 {/* Title */}
-                <Flex flexDir='column' gap='60px' w='100%' h='100%' pt={{base: '170px' ,md:'13vh'}} pl={{base:0, md:'100px'}} position='relative' pb='100px'>
+                <Flex flexDir='column' gap={{base:'40px', xl:'60px'}} w='100%' h='100%' pt={{base: '170px' ,md:'13vh'}} pl={{base:0, md:'100px'}} position='relative' pb='100px'>
 
                     <Flex justifyContent={{base:'center', md:'start'}}>
                         <Title />   
@@ -28,9 +28,7 @@ function Work() {
                         <ExperienceSection />
                     </Flex>
 
-                    <Flex justifyContent={{base:'center', md:'start'}}>
-                        <ResumeButton />
-                    </Flex>
+                   
                 </Flex>
             
             </Box>
