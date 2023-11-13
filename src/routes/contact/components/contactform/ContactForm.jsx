@@ -4,7 +4,7 @@ import { FaRegPaperPlane } from 'react-icons/fa';
 function ContactForm() {
 
     return (
-        <Flex w={{base:'260px', md:'465px',md:'600px'}} bg='red.400' justifyContent='center' pt='3' >
+        <Flex w={{base:'280px', md:'465px',md:'600px'}} bg='red.400' justifyContent='center' pt='3' >
 
             <VStack width='90%' p='30px 5px' spacing={4}>
                 <FormControl>

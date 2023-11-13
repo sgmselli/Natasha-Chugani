@@ -51,10 +51,10 @@ function Header() {
                     {page === '' || homeHover ?
                         <VStack>
                             <CurrentPageBar width='58px' />
-                            <Text onClick={(location) => navigateTo('')} onMouseLeave={(page) => changeHover('home')} cursor='pointer' color='red.400' fontSize='xl'>Home</Text> 
+                            <Text onClick={(location) => navigateTo('')}  cursor='pointer' color='red.400' fontSize='xl'>Home</Text> 
                         </VStack>
                     :
-                        <Text onClick={(location) => navigateTo('')} onMouseEnter={(page) => changeHover('home')} cursor='pointer' fontSize='xl'>Home</Text> 
+                        <Text onClick={(location) => navigateTo('')}  cursor='pointer' fontSize='xl'>Home</Text> 
                     }
                     
                     {page === 'about' || aboutHover ?

@@ -28,7 +28,7 @@ function Work() {
                         <ResumeButton />
                     </Flex>
 
-                    <Flex w='100%' justifyContent={{base:'center', md:'start'}}>
+                    <Flex w='100%' justifyContent={{base:'center', md:'start'}} pb='200px'>
                         <ExperienceSection />
                     </Flex>
 
@@ -47,8 +47,8 @@ function Title() {
 
     return (
         <HStack spacing={0}>
-            <Heading fontSize={{base: '65px', md:'90px'}} color='black'>My Work</Heading>
-            <Heading fontSize={{base: '65px', md:'90px'}} color='red.400'>:</Heading>
+            <Heading fontSize={{base: '50px', md:'90px'}} color='black'>My Work</Heading>
+            <Heading fontSize={{base: '50px', md:'90px'}} color='red.400'>:</Heading>
         </HStack>
     )
 }

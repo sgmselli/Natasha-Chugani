@@ -54,8 +54,8 @@ function Title() {
 
     return (
         <HStack spacing={0} >
-            <Heading fontSize={{base: '65px', md:'90px'}} color='black'>Contact</Heading>
-            <Heading fontSize={{base: '65px', md:'90px'}} color='red.400'>:</Heading>
+            <Heading fontSize={{base: '50px', md:'90px'}} color='black'>Contact</Heading>
+            <Heading fontSize={{base: '50px', md:'90px'}} color='red.400'>:</Heading>
         </HStack>
     )
 }

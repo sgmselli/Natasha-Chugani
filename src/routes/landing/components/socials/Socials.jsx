@@ -12,7 +12,7 @@ function Socials() {
 
                 <Spacer/>
 
-                <Stack spacing={6} padding='30px' direction={{base:'column', xl:'row'}}>
+                <HStack spacing={6} padding='30px' >
                     <Tooltip hasArrow label='View my LinkedIn!' bg='gray.300' color='black'>
                         <Link to='https://www.linkedin.com/in/natasha-chugani-1885a7270/' target='_blank' ><BsLinkedin size={36} color='#C8C8C8'/></Link>
                     </Tooltip>   
@@ -20,7 +20,7 @@ function Socials() {
                     <Tooltip hasArrow label='View my Instagram!' bg='gray.300' color='black'>
                         <Link  to='https://www.instagram.com/natasha.2329/' target='_blank' ><BsInstagram size={36} color='#C8C8C8'/></Link>
                     </Tooltip>
-                </Stack>
+                </HStack>
 
             </VStack>
 
