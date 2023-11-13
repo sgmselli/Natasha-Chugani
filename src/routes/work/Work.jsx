@@ -8,7 +8,7 @@ function Work() {
 
     return (
         <ChakraProvider>
-            <Box h='240vh' w='100vw'>
+            <Box h={{base:'100%', xl:'240vh'}} w='100vw'>
                 <Header />
                 {/* Background Images */}
                 <Box display={{base:'none', xl: 'block'}}>
@@ -18,7 +18,7 @@ function Work() {
                 </Box>
 
                 {/* Title */}
-                <Flex flexDir='column' gap={{base:'40px', xl:'60px'}} w='100%' h='100%' pt={{base: '170px' ,md:'140px'}} pl={{base:0, md:'100px'}} position='relative'>
+                <Flex flexDir='column' gap={{base:'40px', xl:'60px'}} w='100%' h='100%' pt={{base: '170px' ,md:'140px'}} pl={{base:0, md:'100px'}} pb='100px' position='relative'>
 
                     <Flex justifyContent={{base:'center', md:'start'}}>
                         <Title />   
