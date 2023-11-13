@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 function ExperienceSection() {
     return (
-        <Flex w='100%' flexDir='column' gap={{base:'60px', xl:'100px'}} justifyContent={{base:'center', md:'start'}} pl={{base:'5%', md:0}} pr={{base:'5%', md:0}}>
+        <Flex w='100%' flexDir='column' gap={{base:'80px', xl:'100px'}} justifyContent={{base:'center', md:'start'}} pl={{base:'5%', md:0}} pr={{base:'5%', md:0}}>
             <JamieBurrowsExperience />
             <CaribouCoffeExperience />
             <EmpowerMagazineExperience />
