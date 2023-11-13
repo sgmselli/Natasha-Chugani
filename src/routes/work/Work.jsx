@@ -24,9 +24,9 @@ function Work() {
                         <Title />   
                     </Flex>
                     
-                    <Flex justifyContent={{base:'center', md:'start'}}>
+                    {/* <Flex justifyContent={{base:'center', md:'start'}}>
                         <ResumeButton />
-                    </Flex>
+                    </Flex> */}
 
                     <Flex w='100%' justifyContent={{base:'center', md:'start'}} pb='200px'>
                         <ExperienceSection />

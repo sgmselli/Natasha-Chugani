@@ -46,12 +46,12 @@ function WorkLink({src, title, link, logoSize}) {
 
         <Link to={link} target='_blank'>
             <HStack w='100%' spacing={5} justifyContent={{base:'center', md:'start'}}>
-                <Box boxSize={logoSize}>
+                <Box boxSize={{base:'40px', xl:logoSize}}>
                     <Image src={src}/>
                 </Box>
                 <Flex flexDir='column' gap='4px'>
-                    <Heading fontSize='18px'>{title}</Heading>
-                    <Text color='#A4A4A4' fontSize='12px'>{link}</Text>
+                    <Heading fontSize={{base: '10px', xl:'18px'}}>{title}</Heading>
+                    <Text color='#A4A4A4'  fontSize={{base: '5px', xl:'12px'}}>{link}</Text>
                 </Flex>
             </HStack>
         </Link>
