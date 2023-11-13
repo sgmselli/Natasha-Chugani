@@ -21,7 +21,7 @@ function Contact() {
                 </Box>
                 
 
-                <Flex w='100%' h='100%' pt={{base: '170px' ,md:'13vh'}} position='relative' justifyContent='center'  pl={{base:'5%', md:'0'}} pr={{base:'5%', md:'300px'}}>
+                <Flex w='100%' h='100%' pt={{base: '170px' ,md:'140px'}} position='relative' justifyContent='center'  pl={{base:'5%', md:'0'}} pr={{base:'5%', md:'300px'}}>
              
                     <Box>
                         <Flex justifyContent={{base:'center', md:'start'}} >

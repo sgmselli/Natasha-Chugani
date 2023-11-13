@@ -29,7 +29,7 @@ function ExperienceTitle({job, company}) {
 
 function BulletPoint({text}) {
     return (
-        <HStack className="mont-font" fontWeight='medium' fontSize={{base:'11px', xl:'18px'}} justifyContent={'center'}>
+        <HStack className="mont-font" fontWeight='medium' fontSize={{base:'11px', xl:'18px'}} justifyContent={{base:'center', xl:'start'}}>
             <Flex h='100%' alignSelf='start'>
                 <Text >-</Text>
             </Flex>
@@ -78,13 +78,13 @@ function JamieBurrowsExperience() {
             </Flex>
 
             <Flex flexDir='column' gap='16px' w='100%'  >
-                <HStack className="mont-font" fontWeight='medium' fontSize='18px' justifyContent={'center'}>
+                <HStack className="mont-font" fontWeight='medium' fontSize='18px' justifyContent={{base:'center', md:'start'}}>
                     <Flex h='100%' alignSelf='start' display={{base:'none', md:'block'}}>
                         <Text color='white'>-</Text>
                     </Flex>
                     <WorkLink logoSize='80px' src='/youtubelogo.png' title="Jamie Burrows' Youtube Channel" link='https://www.youtube.com/@jamieburrows9747'/>
                 </HStack>
-                <HStack className="mont-font" fontWeight='medium' w='100%' fontSize='18px' justifyContent={'center'} >
+                <HStack className="mont-font" fontWeight='medium' w='100%' fontSize='18px' justifyContent={{base:'center', md:'start'}} >
                     <Flex h='100%' alignSelf='start' display={{base:'none', md:'block'}}>
                         <Text color='white'>-</Text>
                     </Flex>

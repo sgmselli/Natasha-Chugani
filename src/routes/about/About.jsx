@@ -19,7 +19,7 @@ function About() {
                 </Box>
                 
 
-                <Box w='100%' h='100%' pt={{base: '170px' ,md:'13vh'}}  position='relative' pl={{base:'5%', md:'100px'}} pr={{base:'5%', md:'100px'}}>
+                <Box w='100%' h='100%' pt={{base: '170px' ,md:'140px'}}  position='relative' pl={{base:'5%', md:'100px'}} pr={{base:'5%', md:'100px'}}>
 
                     <Flex justifyContent={{base:'center', md:'start'}}>
                         <Title />   
