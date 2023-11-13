@@ -23,19 +23,14 @@ function Work() {
                     <Flex justifyContent={{base:'center', md:'start'}}>
                         <Title />   
                     </Flex>
-                    
-                    {/* <Flex justifyContent={{base:'center', md:'start'}}>
-                        <ResumeButton />
-                    </Flex> */}
 
-                    <Flex w='100%' justifyContent={{base:'center', md:'start'}} pb='200px'>
+                    <Flex w='100%' justifyContent={{base:'center', md:'start'}} pb='100px'>
                         <ExperienceSection />
                     </Flex>
 
-
-
-                    {/* Work experience section */}
-
+                    <Flex justifyContent={{base:'center', md:'start'}}>
+                        <ResumeButton />
+                    </Flex>
                 </Flex>
             
             </Box>

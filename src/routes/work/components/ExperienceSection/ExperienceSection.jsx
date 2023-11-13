@@ -50,8 +50,8 @@ function WorkLink({src, title, link, logoSize}) {
                     <Image src={src}/>
                 </Box>
                 <Flex flexDir='column' gap='4px'>
-                    <Heading fontSize={{base: '10px', xl:'18px'}}>{title}</Heading>
-                    <Text color='#A4A4A4'  fontSize={{base: '5px', xl:'12px'}}>{link}</Text>
+                    <Heading fontSize={{base: '11px', xl:'18px'}}>{title}</Heading>
+                    <Text color='#A4A4A4'  fontSize={{base: '7px', xl:'12px'}}>{link}</Text>
                 </Flex>
             </HStack>
         </Link>
@@ -68,7 +68,7 @@ function JamieBurrowsExperience() {
     const points = [point1, point2, point3, point4];
 
     return (
-        <Flex flexDir='column' gap='50px' justifyContent={{base:'center', md:'start'}}  >
+        <Flex flexDir='column' gap={{base: '30px', xl:'50px'}} justifyContent={{base:'center', md:'start'}}  >
             <ExperienceTitle job='Digital Marketing Assistant' company='Jamie Burrows Training for Recruiters'/>
         
             <Flex flexDir='column' w={{base:'100%', md:'70%'}} gap='14px' justifyContent={{base:'center', md:'start'}} textAlign={{base:'center', md:'start'}}>
@@ -77,14 +77,14 @@ function JamieBurrowsExperience() {
                 })}
             </Flex>
 
-            <Flex flexDir='column' gap='16px' >
-                <HStack className="mont-font" fontWeight='medium' fontSize='18px'>
+            <Flex flexDir='column' gap='16px' w='100%'  >
+                <HStack className="mont-font" fontWeight='medium' fontSize='18px' justifyContent={'center'}>
                     <Flex h='100%' alignSelf='start' display={{base:'none', md:'block'}}>
                         <Text color='white'>-</Text>
                     </Flex>
                     <WorkLink logoSize='80px' src='/youtubelogo.png' title="Jamie Burrows' Youtube Channel" link='https://www.youtube.com/@jamieburrows9747'/>
                 </HStack>
-                <HStack className="mont-font" fontWeight='medium' w='100%' fontSize='18px'  >
+                <HStack className="mont-font" fontWeight='medium' w='100%' fontSize='18px' justifyContent={'center'} >
                     <Flex h='100%' alignSelf='start' display={{base:'none', md:'block'}}>
                         <Text color='white'>-</Text>
                     </Flex>
