@@ -48,43 +48,40 @@ function Header() {
                 
                 <HStack pt={{base:'4vh', md:'0'}} justifyContent={'center'} spacing={{base:'5', md: '16'}}>
 
-                    {page === '' || homeHover ?
+                    {page === '' ?
                         <VStack>
                             <CurrentPageBar width='58px' />
-                            <Text onClick={(location) => navigateTo('')} onMouseLeave={(page) => changeHover('home')} cursor='pointer' color='red.400' fontSize='xl'>Home</Text> 
+                            <Text onClick={(location) => navigateTo('')}  cursor='pointer' color='red.400' fontSize='xl'>Home</Text> 
                         </VStack>
                     :
-                    <Box onClick={(location) => navigateTo('')}>
-                        <Text  onMouseEnter={(page) => changeHover('home')} cursor='pointer' fontSize='xl'>Home</Text> 
-                    </Box>
-                        
+                        <Text onClick={(location) => navigateTo('')} _hover={{color: 'red.400'}} cursor='pointer' fontSize='xl'>Home</Text> 
                     }
                     
                     {page === 'about' || aboutHover ?
                         <VStack>
                             <CurrentPageBar width='58px' />
-                            <Text fontSize='xl' onClick={(location) => navigateTo('about')} onMouseLeave={(page) => changeHover('about')} color='red.400' cursor='pointer'>About</Text>
+                            <Text fontSize='xl' onClick={(location) => navigateTo('about')} color='red.400' cursor='pointer'>About</Text>
                         </VStack>
                     :
-                        <Text fontSize='xl' onClick={(location) => navigateTo('about')} onMouseEnter={(page) => changeHover('about')} cursor='pointer'>About</Text>
+                        <Text fontSize='xl' onClick={(location) => navigateTo('about')} _hover={{color: 'red.400'}} cursor='pointer'>About</Text>
                     }
                     
                     {page === 'work' || workHover ?
                         <VStack>
                             <CurrentPageBar width='50px' />
-                            <Text fontSize='xl' onClick={(location) => navigateTo('work')} onMouseLeave={(page) => changeHover('work')} color='red.400' cursor='pointer'>Work</Text>
+                            <Text fontSize='xl' onClick={(location) => navigateTo('work')}  color='red.400' cursor='pointer'>Work</Text>
                         </VStack>
                     :
-                        <Text fontSize='xl' onClick={(location) => navigateTo('work')} onMouseEnter={(page) => changeHover('work')} cursor='pointer'>Work</Text>
+                        <Text fontSize='xl' onClick={(location) => navigateTo('work')} _hover={{color: 'red.400'}} cursor='pointer'>Work</Text>
                     }
 
                     {page === 'contact' || contactHover ?
                         <VStack>
                             <CurrentPageBar width='70px' />
-                            <Text fontSize='xl' onClick={(location) => navigateTo('contact')} onMouseLeave={(page) => changeHover('contact')} color='red.400' cursor='pointer'>Contact</Text>
+                            <Text fontSize='xl' onClick={(location) => navigateTo('contact')}  color='red.400' cursor='pointer'>Contact</Text>
                         </VStack>
                     :
-                        <Text fontSize='xl' onClick={(location) => navigateTo('contact')} onMouseEnter={(page) => changeHover('contact')} cursor='pointer'>Contact</Text>
+                        <Text fontSize='xl' onClick={(location) => navigateTo('contact')} _hover={{color: 'red.400'}} cursor='pointer'>Contact</Text>
                     }
                     
                 </HStack>
