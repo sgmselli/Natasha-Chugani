@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url('./Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: "Inconsolata", monospace;
+    src: url('./Inconsolata-VariableFont_wdth,wght.ttf');
+}
+
+.mont-font {
+    font-family: "Montserrat";
+}
+
+.sub-title {
+    font-family: "Inconsolata" !important;
+}
