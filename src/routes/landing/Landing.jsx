@@ -16,8 +16,9 @@ function Landing() {
                 
                 <Box display={{base:'none', xl:'block'}}>
                     <BackgroundTitle />
-                    <BackgroundImage />
                 </Box>
+
+                <BackgroundImage />
                 
                 <Socials />
                 <Title />

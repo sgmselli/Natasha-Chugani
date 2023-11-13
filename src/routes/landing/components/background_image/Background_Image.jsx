@@ -6,7 +6,7 @@ export function BackgroundImage() {
             <Spacer />
             <VStack alignItems='end' h='100%' w='100%'>
                 <Spacer/>
-                <Image r={0} maxW='100%' maxH={{base: '50%', xl:'86%'}} src='/background-image1.png'/>
+                <Image r={0} maxW='100%' maxH={{base: '40%', xl:'86%'}} src='/background-image1.png'/>
             </VStack>
         </HStack>
     )
