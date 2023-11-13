@@ -18,13 +18,13 @@ function Work() {
                 </Box>
 
                 {/* Title */}
-                <Flex flexDir='column' gap='60px' w='100%' h='100%' pt={{base: '170px' ,md:'13vh'}} pl={{base:0, md:'100px'}} position='relative'>
+                <Flex flexDir='column' gap='60px' w='100%' h='100%' pt={{base: '170px' ,md:'13vh'}} pl={{base:0, md:'100px'}} position='relative' pb='100px'>
 
                     <Flex justifyContent={{base:'center', md:'start'}}>
                         <Title />   
                     </Flex>
 
-                    <Flex w='100%' justifyContent={{base:'center', md:'start'}} pb='100px'>
+                    <Flex w='100%' justifyContent={{base:'center', md:'start'}} >
                         <ExperienceSection />
                     </Flex>
 
