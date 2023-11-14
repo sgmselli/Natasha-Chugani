@@ -72,8 +72,8 @@ function JamieBurrowsExperience() {
             <ExperienceTitle job='Digital Marketing Assistant' company='Jamie Burrows Training for Recruiters'/>
         
             <Flex flexDir='column' w={{base:'100%', xl:'70%'}} gap='14px'  textAlign={{base:'center', xl:'start'}}>
-                {points.map((point) => {
-                    return <BulletPoint text={point} />
+                {points.map((point, index) => {
+                    return <BulletPoint key={index} text={point} />
                 })}
             </Flex>
 
@@ -109,8 +109,8 @@ function CaribouCoffeExperience() {
             <ExperienceTitle job='Marketing Intern' company='Caribou Coffee'/>
         
             <Flex flexDir='column' w={{base:'100%', xl:'70%'}} gap='14px' justifyContent={{base:'center', xl:'start'}} textAlign={{base:'center', xl:'start'}} >
-                {points.map((point) => {
-                    return <BulletPoint text={point} />
+                {points.map((point, index) => {
+                    return <BulletPoint key={index} text={point} />
                 })}
 
             </Flex>
@@ -131,8 +131,8 @@ function EmpowerMagazineExperience() {
             <ExperienceTitle job='Website Designer' company='Empower Magazine'/>
         
             <Flex flexDir='column' w={{base:'100%', xl:'70%'}} gap='14px' justifyContent={{base:'center', xl:'start'}} textAlign={{base:'center', xl:'start'}} >
-                {points.map((point) => {
-                    return <BulletPoint text={point} />
+                {points.map((point, index) => {
+                    return <BulletPoint key={index} text={point} />
                 })}
 
             </Flex>
