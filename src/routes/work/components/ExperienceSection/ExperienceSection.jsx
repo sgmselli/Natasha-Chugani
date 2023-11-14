@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 function ExperienceSection() {
     return (
-        <Flex w='100%' flexDir='column' gap={{base:'80px', xl:'100px'}} justifyContent={{base:'center', md:'start'}} pl={{base:'5%', md:0}} pr={{base:'5%', md:0}}>
+        <Flex w='100%' flexDir='column' gap={{base:'80px', xl:'100px'}}  pl={{base:'5%', xl:0}} pr={{base:'5%', xl:0}}>
             <JamieBurrowsExperience />
             <CaribouCoffeExperience />
             <EmpowerMagazineExperience />
@@ -15,12 +15,12 @@ function ExperienceSection() {
 
 function ExperienceTitle({job, company}) {
     return (
-        <Flex flexDir='column' gap='8px' w='100%' justifyContent={{base:'center', md:'start'}} textAlign={{base:'center', md:'start'}}>
-            <Flex justifyContent={{base:'center', md:'start'}} >
-                <Heading color='black' fontSize={{base:'25px', xl:'45px'}}>{job}</Heading>
+        <Flex flexDir='column' gap='8px' w='100%' textAlign={{base:'center', xl:'start'}}>
+            <Flex justifyContent={{base:'center', xl:'start'}} >
+                <Heading color='black' fontSize={{base:'25px', xl:'35px'}}>{job}</Heading>
             </Flex>
-            <Flex justifyContent={{base:'center', md:'start'}}>
-                <Heading color='red.400' fontSize={{base:'15px', xl:'25px'}}>{company}</Heading>
+            <Flex justifyContent={{base:'center', xl:'start'}}>
+                <Heading color='red.400' fontSize={{base:'15px', xl:'18px'}}>{company}</Heading>
             </Flex>
 
         </Flex>
@@ -29,7 +29,7 @@ function ExperienceTitle({job, company}) {
 
 function BulletPoint({text}) {
     return (
-        <HStack className="mont-font" fontWeight='medium' fontSize={{base:'11px', xl:'18px'}} justifyContent={{base:'center', xl:'start'}}>
+        <HStack className="mont-font" fontWeight='medium' fontSize={{base:'11px', xl:'15px'}} justifyContent={{base:'center', xl:'start'}}>
             <Flex h='100%' alignSelf='start'>
                 <Text >-</Text>
             </Flex>
@@ -50,8 +50,8 @@ function WorkLink({src, title, link, logoSize}) {
                     <Image src={src}/>
                 </Box>
                 <Flex flexDir='column' gap='4px'>
-                    <Heading fontSize={{base: '11px', xl:'18px'}}>{title}</Heading>
-                    <Text color='#A4A4A4'  fontSize={{base: '7px', xl:'12px'}}>{link}</Text>
+                    <Heading fontSize={{base: '11px', xl:'15px'}}>{title}</Heading>
+                    <Text color='#A4A4A4'  fontSize={{base: '7px', xl:'10px'}}>{link}</Text>
                 </Flex>
             </HStack>
         </Link>
@@ -68,27 +68,27 @@ function JamieBurrowsExperience() {
     const points = [point1, point2, point3, point4];
 
     return (
-        <Flex flexDir='column' gap={{base: '30px', xl:'50px'}} justifyContent={{base:'center', md:'start'}}  >
+        <Flex flexDir='column' gap={{base: '30px', xl:'50px'}}  >
             <ExperienceTitle job='Digital Marketing Assistant' company='Jamie Burrows Training for Recruiters'/>
         
-            <Flex flexDir='column' w={{base:'100%', md:'70%'}} gap='14px' justifyContent={{base:'center', md:'start'}} textAlign={{base:'center', md:'start'}}>
+            <Flex flexDir='column' w={{base:'100%', xl:'70%'}} gap='14px'  textAlign={{base:'center', xl:'start'}}>
                 {points.map((point) => {
                     return <BulletPoint text={point} />
                 })}
             </Flex>
 
             <Flex flexDir='column' gap='16px' w='100%'  >
-                <HStack className="mont-font" fontWeight='medium' fontSize='18px' justifyContent={{base:'center', md:'start'}}>
-                    <Flex h='100%' alignSelf='start' display={{base:'none', md:'block'}}>
+                <HStack className="mont-font" fontWeight='medium' fontSize='18px' justifyContent={{base:'center', xl:'start'}}>
+                    <Flex h='100%' alignSelf='start' display={{base:'none', xl:'block'}}>
                         <Text color='white'>-</Text>
                     </Flex>
-                    <WorkLink logoSize='80px' src='/youtubelogo.png' title="Jamie Burrows' Youtube Channel" link='https://www.youtube.com/@jamieburrows9747'/>
+                    <WorkLink logoSize='70px' src='/youtubelogo.png' title="Jamie Burrows' Youtube Channel" link='https://www.youtube.com/@jamieburrows9747'/>
                 </HStack>
-                <HStack className="mont-font" fontWeight='medium' w='100%' fontSize='18px' justifyContent={{base:'center', md:'start'}} >
+                <HStack className="mont-font" fontWeight='medium' w='100%' fontSize='18px' justifyContent={{base:'center', xl:'start'}} >
                     <Flex h='100%' alignSelf='start' display={{base:'none', md:'block'}}>
                         <Text color='white'>-</Text>
                     </Flex>
-                    <WorkLink logoSize='60px' src='/linkedinlogo.png' title="Jamie Burrows' LinkedIn Page" link="https://www.linkedin.com/in/jamie-burrows-training" />
+                    <WorkLink logoSize='50px' src='/linkedinlogo.png' title="Jamie Burrows' LinkedIn Page" link="https://www.linkedin.com/in/jamie-burrows-training" />
                 </HStack>
                
             </Flex>
@@ -108,7 +108,7 @@ function CaribouCoffeExperience() {
         <Flex flexDir='column' gap='40px'>
             <ExperienceTitle job='Marketing Intern' company='Caribou Coffee'/>
         
-            <Flex flexDir='column' w={{base:'100%', md:'70%'}} gap='14px' justifyContent={{base:'center', md:'start'}} textAlign={{base:'center', md:'start'}} >
+            <Flex flexDir='column' w={{base:'100%', xl:'70%'}} gap='14px' justifyContent={{base:'center', xl:'start'}} textAlign={{base:'center', xl:'start'}} >
                 {points.map((point) => {
                     return <BulletPoint text={point} />
                 })}
@@ -130,7 +130,7 @@ function EmpowerMagazineExperience() {
         <Flex flexDir='column' gap='40px'>
             <ExperienceTitle job='Website Designer' company='Empower Magazine'/>
         
-            <Flex flexDir='column' w={{base:'100%', md:'70%'}} gap='14px' justifyContent={{base:'center', md:'start'}} textAlign={{base:'center', md:'start'}} >
+            <Flex flexDir='column' w={{base:'100%', xl:'70%'}} gap='14px' justifyContent={{base:'center', xl:'start'}} textAlign={{base:'center', xl:'start'}} >
                 {points.map((point) => {
                     return <BulletPoint text={point} />
                 })}

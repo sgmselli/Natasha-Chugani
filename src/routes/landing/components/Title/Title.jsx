@@ -10,20 +10,20 @@ export function Title() {
          <Spacer/>
             <Box>
                 <HStack spacing={0}>
-                    <Heading fontSize={{base: '50px', xl:'145px'}} >Hello</Heading>
-                    <Heading fontSize={{base: '50px', xl:'145px'}} color='red.400'>.</Heading>
+                    <Heading fontSize={{base: '50px', md:'100px', xl:'145px'}} >Hello</Heading>
+                    <Heading fontSize={{base: '50px', md:'100px', xl:'145px'}} color='red.400'>.</Heading>
                 </HStack>
 
-                <HStack spacing={{base:6, xl:16}}>
+                <HStack spacing={{base:6, md:16}}>
                     <HStack spacing={4}>
-                        <Heading textOverflow='none' fontSize={{base: '50px', xl:'145px'}} >I</Heading>
-                        <Heading textOverflow='none' fontSize={{base: '50px', xl:'145px'}} >am </Heading>
+                        <Heading textOverflow='none' fontSize={{base: '50px', md:'100px', xl:'145px'}} >I</Heading>
+                        <Heading textOverflow='none' fontSize={{base: '50px', md:'100px', xl:'145px'}} >am </Heading>
                     </HStack>
                     
                     <SubTitle />
                 </HStack>
                 
-                <Heading fontSize={{base: '50px', xl:'145px'}} >Natasha</Heading>
+                <Heading fontSize={{base: '50px', md:'100px', xl:'145px'}} >Natasha</Heading>
             </Box>
             <Spacer />
         </VStack>
@@ -34,7 +34,7 @@ export function Title() {
 function SubTitle() {
 
     return (
-        <Flex flexDir='column' gap='8px' pt={{base:'10px', xl:'30px'}} whiteSpace='nowrap' className='mont-font' fontWeight='medium' fontSize={{base: '8px', xl:'22px'}} position='relative'>
+        <Flex flexDir='column' gap='8px' pt={{base:'10px', md:'15px', lg:'30px'}} whiteSpace='nowrap' className='mont-font' fontWeight='medium' fontSize={{base: '8px', md:'16px', xl:'22px'}} position='relative'>
             <Text  > A Professional Digital Marketing Assistant</Text>
             <Text  >and Graphic Designer currently based</Text>
             <Text  >in London, United Kingdom</Text>

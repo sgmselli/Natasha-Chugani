@@ -8,7 +8,7 @@ function Work() {
 
     return (
         <ChakraProvider>
-            <Box h={{base:'100%', xl:'230vh'}} w='100vw'>
+            <Box h={{base:'100%', xl:'200vh'}} w='100vw'>
                 <Header />
                 {/* Background Images */}
                 <Box display={{base:'none', xl: 'block'}}>
@@ -18,9 +18,9 @@ function Work() {
                 </Box>
 
                 {/* Title */}
-                <Flex flexDir='column' gap={{base:'40px', xl:'60px'}} w='100%' h='100%' pt={{base: '170px' ,md:'120px'}} pl={{base:0, md:'100px'}} pb='100px' position='relative'>
+                <Flex flexDir='column' gap={{base:'40px', xl:'60px'}} w='100%' h='100%' pt={{base: '170px' ,md:'120px'}} pl={{base:0, xl:'100px'}} pb='100px' position='relative'>
 
-                    <Flex justifyContent={{base:'center', md:'start'}}>
+                    <Flex justifyContent={{base:'center', xl:'start'}}>
                         <Title />   
                     </Flex>
 
@@ -40,8 +40,8 @@ function Title() {
 
     return (
         <HStack spacing={0}>
-            <Heading fontSize={{base: '50px', md:'90px'}} color='black'>My Work</Heading>
-            <Heading fontSize={{base: '50px', md:'90px'}} color='red.400'>:</Heading>
+            <Heading fontSize={{base: '50px', md:'70px'}} color='black'>My Work</Heading>
+            <Heading fontSize={{base: '50px', md:'70px'}} color='red.400'>:</Heading>
         </HStack>
     )
 }

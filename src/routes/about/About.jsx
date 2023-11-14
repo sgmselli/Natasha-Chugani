@@ -21,12 +21,12 @@ function About() {
 
                 <Box w='100%' h='100%' pt={{base: '170px' ,md:'120px'}}  position='relative' pl={{base:'5%', md:'100px'}} pr={{base:'5%', md:'100px'}}>
 
-                    <Flex justifyContent={{base:'center', md:'start'}}>
+                    <Flex justifyContent={{base:'center', xl:'start'}}>
                         <Title />   
                     </Flex>
 
                     {/* Person Image and about description */}
-                    <Stack direction={{base:'column', xl:'row'}} pt={{base: '40px', xl:'80px'}} pb={{base:'200px', xl:0}} spacing='100px'>
+                    <Stack direction={{base:'column', xl:'row'}} pt={{base: '40px', xl:'70px'}} pb={{base:'100px', xl:0}} spacing='100px'>
 
                         <Description />
                         <Flex justifyContent={{base:'center', xl:'start'}}>
@@ -57,10 +57,10 @@ function Title() {
     return (
         <Box>
             <HStack spacing={4}>
-                <Heading fontSize={{base: '50px', md:'90px'}} color='black'>About</Heading>
+                <Heading fontSize={{base: '50px', md:'70px'}} color='black'>About</Heading>
                 <HStack spacing={0}>
-                    <Heading fontSize={{base: '50px', md:'90px'}} color='black'>Me</Heading>
-                    <Heading fontSize={{base: '50px', md:'90px'}} color='red.400'>:</Heading>
+                    <Heading fontSize={{base: '50px', md:'70px'}} color='black'>Me</Heading>
+                    <Heading fontSize={{base: '50px', md:'70px'}} color='red.400'>:</Heading>
                 </HStack>
                
                 
