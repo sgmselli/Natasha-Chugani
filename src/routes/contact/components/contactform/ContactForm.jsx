@@ -11,6 +11,12 @@ function ContactForm() {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
 
+    const resetForm = () => {
+        setName('');
+        setEmail('');
+        setMessage('');
+    }
+
 
     return (
         <Flex w={{base:'360px', sm:'465px',md:'600px'}} bg='red.400' justifyContent='center' pt='3' >
@@ -18,21 +24,21 @@ function ContactForm() {
             <VStack width='90%' p='30px 5px' spacing={4}>
                 <FormControl>
                     <FormLabel className='mont-font' color='white'  >Name</FormLabel>
-                    <Input onChange={(e) => setName(e.target.value)} bg='white' borderRadius={0} border='none' placeholder='E.g. John Smith' className='form-input mont-font' fontSize='14px'/>
+                    <Input onChange={(e) => setName(e.target.value)} value={name} bg='white' borderRadius={0} border='none' placeholder='E.g. John Smith' className='form-input mont-font' fontSize='14px'/>
                 </FormControl>
 
                 <FormControl>
                     <FormLabel className='mont-font' color='white' >Email</FormLabel>
-                    <Input onChange={(e) => setEmail(e.target.value)} bg='white' type='email' borderRadius={0} border='none' placeholder='E.g. johnsmith@example.com' className='form-input mont-font' fontSize='14px'/>
+                    <Input onChange={(e) => setEmail(e.target.value)} value={email} bg='white' type='email' borderRadius={0} border='none' placeholder='E.g. johnsmith@example.com' className='form-input mont-font' fontSize='14px'/>
                 </FormControl>
 
 
                 <FormControl>
                     <FormLabel className='mont-font' color='white' >Message</FormLabel>
-                    <Textarea onChange={(e) => setMessage(e.target.value)} h='160px' bg='white' borderRadius={0} border='none' placeholder='Write us a message!' className='form-input mont-font' fontSize='14px' resize='none' />
+                    <Textarea onChange={(e) => setMessage(e.target.value)} value={message} h='160px' bg='white' borderRadius={0} border='none' placeholder='Write us a message!' className='form-input mont-font' fontSize='14px' resize='none' />
                 </FormControl>
 
-                <SendButton name={name} email={email} message={message} />
+                <SendButton name={name} email={email} message={message} resetForm={resetForm}/>
             s
             </VStack>
 
@@ -40,7 +46,7 @@ function ContactForm() {
     )
 }
 
-function SendButton({name, email, message}) {
+function SendButton({name, email, message, resetForm}) {
 
     const [sent, setSent] = useState(false);
     const [successful, setSuccessful] = useState(false);
@@ -56,9 +62,7 @@ function SendButton({name, email, message}) {
             .then(function() {
                 setSent(true)
                 setSuccessful(true)
-
             }, function() {
-
                 setSent(true)
                 setSuccessful(false)
         });
@@ -67,16 +71,18 @@ function SendButton({name, email, message}) {
     }
 
     function valid(name, email, message) {
+        if (name === '' || email === '' || message === '') {
+            alert('Please fill in all inputs.')
+            return false
+        }
         return true
     }
 
     const handleClick = () => {
+        resetForm();
         if (valid(name, email, message)) {
             sendEmail(name, email, message)
-        } else {
-            alert('inputs not valid')
-        }
-        
+        } 
     }
 
 
@@ -107,9 +113,7 @@ function EmailAlert({open, successful, setOpen}) {
         motionPreset='slideInBottom'
         isOpen={open}
         isCentered
-        
-
-      >
+        >
         <AlertDialogOverlay />
 
         <AlertDialogContent w='300px' h='300px' >
