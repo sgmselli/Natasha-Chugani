@@ -8,12 +8,12 @@ function ContactDetails() {
         <Flex flexDir='column' gap='32px' alignItems={{base:'center', xl: 'start'}} textAlign={{base:'center', xl: 'start'}}>
             <Flex flexDir='column' gap='6px'>
                 <Text className="mont-font" fontSize='14px'>Phone</Text>
-                <Text className="mont-font" fontWeight='extrabold' fontSize='17px'>(+44)7873 962642</Text>
+                <Text className="mont-font" fontWeight='extrabold' fontSize='17px'>(+44)7478 477733</Text>
             </Flex>
 
             <Flex flexDir='column' gap='6px'>
                 <Text className="mont-font" fontSize='14px'>Email</Text>
-                <Text className="mont-font" fontWeight='extrabold' fontSize='17px'>sgmselli@gmail.com</Text>
+                <Text className="mont-font" fontWeight='extrabold' fontSize='17px'>chugani.natasha2004@gmail.com</Text>
             </Flex>
 
             <Flex flexDir='column' gap='6px'> 
