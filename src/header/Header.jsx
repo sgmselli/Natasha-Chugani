@@ -43,7 +43,6 @@ function Header() {
                 <Flex justifyContent={{base:'center', lg:'start'}}>
                     <HStack spacing={0}>
                     <Heading  size='lg'onClick={(location) => navigateTo('')} cursor='pointer' >Natasha</Heading>
-                    <Heading  size='lg'onClick={(location) => navigateTo('')} color='red.400' cursor='pointer' >Chugani</Heading>
                     </HStack>
                  
               
